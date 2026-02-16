@@ -1,8 +1,8 @@
 from collections import Counter
-from A import A
+from Carta import Carta
 
 class B:
-    def __init__(self, a1: list[A]):
+    def __init__(self, a1: list[Carta]):
         self.a1 = a1
 
     def m1(self) -> tuple[int, int]:

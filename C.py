@@ -1,9 +1,9 @@
 import random
-from A import A
+from Carta import Carta
 
 class C:
     def __init__(self):
-        self.a1 = [A(v, p) for v in range(2, 15) for p in ["♠", "♥", "♦", "♣"]]
+        self.a1 = [Carta(v, p) for v in range(2, 15) for p in ["♠", "♥", "♦", "♣"]]
         random.shuffle(self.a1)
 
     def m1(self):
