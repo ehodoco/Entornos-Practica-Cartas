@@ -1,5 +1,9 @@
 
+
 class Carta:
+    """Clase de carta de baraja inglesa
+    contiene su número y su palo
+    """
     def __init__(self, numero: int, palo: str) -> None:
         """Método constructor
         """
@@ -8,10 +12,7 @@ class Carta:
 
     def __str__(self) -> str:
         """Imprime el número de la carta junto a su palo
-
-        :param [ParamName]: [ParamDescription], defaults to [DefaultParamVal]
-        :type [ParamName]: [ParamType](, optional)
-        ...
+        
         :return: [El número y el palo de la carta]
         :rtype: [str]
         """
