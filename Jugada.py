@@ -4,6 +4,9 @@ from Carta import Carta
 
 class Jugada:
     """Clase de jugada de póker que contiene datos sobre la jugada actual
+
+    :param mano: La mano de cartas con la que se está jugando
+    :type mano: list[Carta]
     """
     def __init__(self, mano: list[Carta]) -> None:
         """Método constructor
@@ -41,7 +44,7 @@ class Jugada:
         if 2 in cantidad_valores.values():
             return (1, max(valor for valor, veces_aparecido in cantidad_valores.items() if veces_aparecido == 2))
         return (0, max(valores))
-    
+
     def nombre_jugada(self) -> str:
         """Método que devuelve el nombre de la jugada actual
 
